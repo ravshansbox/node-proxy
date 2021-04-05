@@ -6,7 +6,7 @@
     "start": "HTTP_PORT=3000 node-dev --clear --notify=false ."
   },
   "devDependencies": {
-    "@types/node": "^14.14.35",
-    "node-dev": "^6.5.0"
+    "@types/node": "^14.14.37",
+    "node-dev": "^6.6.0"
   }
 }
