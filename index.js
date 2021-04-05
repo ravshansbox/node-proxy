@@ -10,7 +10,7 @@ const server = createServer((req, res) => {
     return res.end();
   }
   const urlPath = new URLSearchParams(url.substr(querySignIndex)).get('url');
-  const request = new URL(urlPath).protocol === 'http' ? httpRequest : httpsRequest;
+  const request = new URL(urlPath).protocol === 'http:' ? httpRequest : httpsRequest;
   delete headers.host;
   const client = request(urlPath, { method, headers }, (message) => {
     for (const [key, value] of Object.entries(message.headers)) {
